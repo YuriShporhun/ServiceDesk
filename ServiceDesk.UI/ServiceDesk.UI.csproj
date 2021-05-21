@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Pic.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentWPF" Version="0.9.0" />
+    <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Pic.jpg" />
+  </ItemGroup>
+
+</Project>
