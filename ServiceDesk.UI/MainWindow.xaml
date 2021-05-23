@@ -162,7 +162,7 @@
             </StackPanel>
             </Border>
         </StackPanel>
-        
+
         <StackPanel Grid.Row="2" Grid.Column="2" Background="#E6EFF6">
             <Rectangle Opacity="0.95" Height="10" Margin="0, -10, 0, 0">
                 <Rectangle.Fill>
@@ -186,10 +186,10 @@
                 </Grid.RowDefinitions>
                 
                 <StackPanel Grid.Column="1" Height="600">
-                    <TextBlock Background="#F8F9FC" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
+                    <TextBlock Background="#F1F1F1" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
                         Profile
                     </TextBlock>
-                    <StackPanel Background="#fbfbfb" Height="530">
+                    <StackPanel Background="#f9f9fb" Height="530">
                         <Ellipse Height="100" Width="100" Margin="0, 35, 0, 20">
                             <Ellipse.Fill>
                                 <ImageBrush ImageSource="pack://application:,,,/ServiceDesk.UI;component/Images/Pic.jpg" Stretch="Fill"/>
@@ -198,7 +198,7 @@
                         <TextBlock TextAlignment="Center" FontFamily="Source Sans Pro" FontSize="25" Foreground="#8B92AC">Yuriy Shporkhun</TextBlock>
                         <TextBlock TextAlignment="Center" FontFamily="Source Sans Pro" FontSize="25" Foreground="#8B92AC">yuripclive@live.ru</TextBlock>
 
-                        <Border Width="177" Height="49" Background="#45B4D0" BorderThickness="1" CornerRadius="30" Margin="0,22">
+                        <Border HorizontalAlignment="Center" Width="177" Height="49" Background="#45B4D0" BorderThickness="1" CornerRadius="30" Margin="0,22">
                             <Border.BorderBrush>
                                 <SolidColorBrush>
                                     #45B4D0
@@ -206,8 +206,13 @@
                             </Border.BorderBrush>
                             <Button Background="Transparent" FontFamily="Source Sans Pro" FontSize="25" Foreground="White" BorderBrush="Transparent">Edit</Button>
                         </Border>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White" Margin="0, 0, 20, 0">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                            <StackPanel.Resources>
+                                <Style TargetType="{x:Type StackPanel}">
+                                    <Setter Property="Margin" Value="0,0,20,0"/>
+                                </Style>
+                            </StackPanel.Resources>
+                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White">
                                 <Rectangle Width="5">
                                     <Rectangle.Fill>
                                         #354FA6
@@ -218,15 +223,26 @@
                                     <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="22" Foreground="#8B92AC">Clients</TextBlock>
                                 </StackPanel>
                             </StackPanel>
-                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White">
+                            <StackPanel Width="190" Height="122" Orientation="Horizontal" Background="White">
                                 <Rectangle Width="5">
                                     <Rectangle.Fill>
                                         #F1C312
                                     </Rectangle.Fill>
                                 </Rectangle>
-                                <StackPanel Orientation="Vertical" Width="155">
+                                <StackPanel Orientation="Vertical" Width="185">
                                     <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="50" Foreground="#F1C312">125</TextBlock>
-                                    <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="22" Foreground="#F1C312">Credits</TextBlock>
+                                    <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="22" Foreground="#8B92AC">Credits</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White" Margin="0">
+                                <Rectangle Width="5">
+                                    <Rectangle.Fill>
+                                        #45B4D0
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <StackPanel Orientation="Vertical" Width="155">
+                                    <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="50" Foreground="#45B4D0">125</TextBlock>
+                                    <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="22" Foreground="#8B92AC">Messages</TextBlock>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>
@@ -234,15 +250,16 @@
                 </StackPanel>
                 
                 <StackPanel Grid.Column="3" Height="600">
-                    <TextBlock Background="#F8F9FC" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
+                    <TextBlock Background="#F1F1F1" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
                         Dashboard
                     </TextBlock>
-                    <StackPanel Background="#fbfbfb" Height="530">
-                        <DataGrid Width="600" Height="200" Margin="0, 38, 0, 0">
+                    <StackPanel Background="#f9f9fb" Height="530">
+                        <DataGrid Width="590" Height="200" Margin="0, 38, 0, 0" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="No.">
                                     <DataGridColumn.HeaderStyle>
                                         <Style TargetType="DataGridColumnHeader">
+                                            <Setter Property="Padding" Value="35, 0, 0, 0"/>
                                             <Setter Property="Background" Value="White"/>
                                             <Setter Property="Foreground" Value="#8B92AC"/>
                                             <Setter Property="FontSize" Value="20"/>
@@ -259,6 +276,42 @@
                                             <Setter Property="FontSize" Value="20"/>
                                             <Setter Property="FontFamily" Value="Source Sans Pro"/>
                                             <Setter Property="Width" Value="100"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridColumn.HeaderStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Amount">
+                                    <DataGridColumn.HeaderStyle>
+                                        <Style TargetType="DataGridColumnHeader">
+                                            <Setter Property="Background" Value="White"/>
+                                            <Setter Property="Foreground" Value="#8B92AC"/>
+                                            <Setter Property="FontSize" Value="20"/>
+                                            <Setter Property="FontFamily" Value="Source Sans Pro"/>
+                                            <Setter Property="Width" Value="120"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridColumn.HeaderStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Status">
+                                    <DataGridColumn.HeaderStyle>
+                                        <Style TargetType="DataGridColumnHeader">
+                                            <Setter Property="Background" Value="White"/>
+                                            <Setter Property="Foreground" Value="#8B92AC"/>
+                                            <Setter Property="FontSize" Value="20"/>
+                                            <Setter Property="FontFamily" Value="Source Sans Pro"/>
+                                            <Setter Property="Width" Value="120"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridColumn.HeaderStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Options">
+                                    <DataGridColumn.HeaderStyle>
+                                        <Style TargetType="DataGridColumnHeader">
+                                            <Setter Property="Background" Value="White"/>
+                                            <Setter Property="Foreground" Value="#8B92AC"/>
+                                            <Setter Property="FontSize" Value="20"/>
+                                            <Setter Property="FontFamily" Value="Source Sans Pro"/>
+                                            <Setter Property="Width" Value="150"/>
                                             <Setter Property="HorizontalContentAlignment" Value="Center"/>
                                         </Style>
                                     </DataGridColumn.HeaderStyle>
