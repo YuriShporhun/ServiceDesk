@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace SeviceDesk.UI
+namespace Views.SeviceDesk.UI
 {
     public partial class MainWindow : Window
     {

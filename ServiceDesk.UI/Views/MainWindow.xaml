@@ -1,9 +1,9 @@
-﻿<Window x:Class="SeviceDesk.UI.MainWindow"
+﻿<Window x:Class="Views.SeviceDesk.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SeviceDesk.UI"
+        xmlns:local="clr-namespace:Views.SeviceDesk.UI"
         mc:Ignorable="d"
         RenderOptions.EdgeMode="Aliased"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
@@ -254,7 +254,7 @@
                         Dashboard
                     </TextBlock>
                     <StackPanel Background="#f9f9fb" Height="530">
-                        <DataGrid Width="590" Height="200" Margin="0, 38, 0, 0" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0">
+                        <DataGrid Width="590" Height="200" Margin="0, 38, 0, 0" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0" Background="White">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="No.">
                                     <DataGridColumn.HeaderStyle>
