@@ -61,8 +61,8 @@
         <DockPanel LastChildFill="False" Grid.Column="2">
             <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="0, 45, 0, 0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                    <fa:IconBlock Width="35" Height="35" Padding="0 8 0 0" Icon="Language" Foreground="#8393a3" FontSize="20" />
-                    <TextBlock Width="122" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular" Margin="10 0 0 0">
+                    <fa:IconBlock VerticalAlignment="Center" Width="35" Height="35" Padding="0 8 0 0" Icon="Language" Foreground="#8393a3" FontSize="20" HorizontalAlignment="Center" />
+                    <TextBlock  Width="122" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="28" FontWeight="Regular" Margin="5 0 0 0" Padding="0, 4, 0, 0">
                         <TextBlock.Text>
                             Language
                         </TextBlock.Text>
@@ -70,7 +70,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="10, 0, 0, 0" VerticalAlignment="Top">
                     <fa:IconBlock Width="35" Height="35" Padding="0 8 0 0" Icon="User" Foreground="#8393a3" FontSize="18"/>
-                    <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular" Margin="10 0 0 0">
+                    <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="28" FontWeight="Regular" Margin="0 0 0 0" Padding="0, 4, 0, 0">
                         <TextBlock.Text>
                             User Name
                         </TextBlock.Text>
@@ -190,7 +190,7 @@
                         Profile
                     </TextBlock>
                     <StackPanel Background="#f9f9fb" Height="530">
-                        <Ellipse Height="100" Width="100" Margin="0, 35, 0, 20">
+                        <Ellipse Height="150" Width="150" Margin="0, 35, 0, 20">
                             <Ellipse.Fill>
                                 <ImageBrush ImageSource="pack://application:,,,/ServiceDesk.UI;component/Images/Pic.jpg" Stretch="Fill"/>
                             </Ellipse.Fill>
@@ -209,10 +209,10 @@
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                             <StackPanel.Resources>
                                 <Style TargetType="{x:Type StackPanel}">
-                                    <Setter Property="Margin" Value="0,0,20,0"/>
+                                    <Setter Property="Margin" Value="0,0,0,0"/>
                                 </Style>
                             </StackPanel.Resources>
-                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White">
+                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White" Margin="0,0,10,0">
                                 <Rectangle Width="5">
                                     <Rectangle.Fill>
                                         #354FA6
@@ -234,7 +234,7 @@
                                     <TextBlock HorizontalAlignment="Center" FontFamily="Source Sans Pro" FontSize="22" Foreground="#8B92AC">Credits</TextBlock>
                                 </StackPanel>
                             </StackPanel>
-                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White" Margin="0">
+                            <StackPanel Width="160" Height="122" Orientation="Horizontal" Background="White" Margin="10, 0, 0, 0">
                                 <Rectangle Width="5">
                                     <Rectangle.Fill>
                                         #45B4D0
