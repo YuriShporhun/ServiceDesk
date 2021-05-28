@@ -16,6 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ServiceDesk.Controls\ServiceDesk.Controls.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\Pic.jpg" />
   </ItemGroup>
 
