@@ -80,45 +80,45 @@
         </DockPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="1">
-            <StackPanel Orientation="Horizontal" Margin="0, 65, 0, 21" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" Margin="0, 65, 0, 21" Height="45">
                 <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="Home" Foreground="#45B4D0" FontSize="24"/>
-                <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
+                <TextBlock Width="135" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular" VerticalAlignment="Center">
                     <TextBlock.Text>
                         Home
                     </TextBlock.Text>
                 </TextBlock>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top">
-                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="UserFriends" Foreground="#45B4D0" FontSize="21"/>
-                <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top" Height="45">
+                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="UserFriends" Foreground="#45B4D0" FontSize="20"/>
+                <TextBlock Width="137" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular" VerticalAlignment="Center">
                     <TextBlock.Text>
                         Clients
                     </TextBlock.Text>
                 </TextBlock>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top">
-                <fa:IconBlock Width="35" Height="35" Padding="0 6 0 0" Icon="MoneyBill" Foreground="#45B4D0" FontSize="20"/>
-                <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top" Height="45">
+                <fa:IconBlock Width="35" Height="35" Padding="0 6 0 0" Icon="MoneyBill" Foreground="#45B4D0" FontSize="18"/>
+                <TextBlock Width="137" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
                     <TextBlock.Text>
                         Accounts
                     </TextBlock.Text>
                 </TextBlock>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top">
-                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="PiggyBank" Foreground="#45B4D0" FontSize="23"/>
-                <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 21" VerticalAlignment="Top" Height="45">
+                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="PiggyBank" Foreground="#45B4D0" FontSize="20"/>
+                <TextBlock Width="137" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
                     <TextBlock.Text>
                         Credits
                     </TextBlock.Text>
                 </TextBlock>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" VerticalAlignment="Top">
-                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="StickyNote" Foreground="#45B4D0" FontSize="24"/>
-                <TextBlock Width="137" Height="43" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" VerticalAlignment="Top" Height="45">
+                <fa:IconBlock Width="35" Height="35" Padding="0 4 0 0" Icon="StickyNote" Foreground="#45B4D0" FontSize="20"/>
+                <TextBlock Width="137" Foreground="#8B92AC" FontFamily="Source Sans Pro" FontSize="30" FontWeight="Regular">
                     <TextBlock.Text>
                         History
                     </TextBlock.Text>
@@ -186,7 +186,7 @@
                 </Grid.RowDefinitions>
                 
                 <StackPanel Grid.Column="1" Height="600">
-                    <TextBlock Background="#F1F1F1" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
+                    <TextBlock Background="#E0E0E0" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
                         Profile
                     </TextBlock>
                     <StackPanel Background="#f9f9fb" Height="530">
@@ -250,11 +250,11 @@
                 </StackPanel>
                 
                 <StackPanel Grid.Column="3" Height="600">
-                    <TextBlock Background="#F1F1F1" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
+                    <TextBlock Background="#E0E0E0" Height="70" FontFamily="Source Sans Pro" FontSize="22" Foreground="#151865" Padding="39, 18">
                         Dashboard
                     </TextBlock>
                     <StackPanel Background="#f9f9fb" Height="530">
-                        <DataGrid Width="590" Height="200" Margin="0, 38, 0, 0" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0" Background="White">
+                        <DataGrid Width="590" Height="450" Margin="0, 38, 0, 0" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0" Background="White">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="No.">
                                     <DataGridColumn.HeaderStyle>
