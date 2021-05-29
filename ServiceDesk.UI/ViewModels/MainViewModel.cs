@@ -8,6 +8,6 @@ namespace ServiceDesk.UI.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-
+        
     }
 }
