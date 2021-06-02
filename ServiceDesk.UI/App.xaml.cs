@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceDesk.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -16,7 +17,8 @@ namespace SeviceDesk.UI
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            MainViewModel mainViewModel = new MainViewModel();
+            MainWindow mainWindow = new MainWindow(mainViewModel);
             mainWindow.Show();
 
             base.OnStartup(e);
