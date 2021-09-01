@@ -1,7 +1,7 @@
 ﻿using ServiceDesk.UI.ViewModels;
 using System.Windows;
 
-namespace Views.SeviceDesk.UI
+namespace Views.ServiceDesk.UI
 {
     public partial class MainWindow : Window
     {
