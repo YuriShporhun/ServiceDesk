@@ -1,14 +1,8 @@
 ﻿using ServiceDesk.UI.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+using ServiceDesk.UI.Views;
 using System.Windows;
-using Views.SeviceDesk.UI;
 
-namespace SeviceDesk.UI
+namespace ServiceDesk.UI
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -17,8 +11,8 @@ namespace SeviceDesk.UI
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            MainViewModel mainViewModel = new MainViewModel();
-            MainWindow mainWindow = new MainWindow(mainViewModel);
+            MainViewModel mainViewModel = new();
+            MainWindow mainWindow = new(mainViewModel);
             mainWindow.Show();
 
             base.OnStartup(e);
